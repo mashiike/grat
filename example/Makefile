@@ -16,4 +16,4 @@ create-event-source-mapping:
 	aws lambda create-event-source-mapping \
 		--function-name grat-hello --batch-size 5 \
 		--maximum-batching-window-in-seconds 60 \
-		--event-source-arn arn:aws:sqs:$(AWS_DEFAULT_REGION):$(AWS_ACCOUNT_ID):dart-example
+		--event-source-arn arn:aws:sqs:$(AWS_DEFAULT_REGION):$(AWS_ACCOUNT_ID):grat-hello
